@@ -1,0 +1,18 @@
+{
+  "id": 123,
+  "jsonrpc": "2.0",
+  "method": "person.info",
+  "result": {
+    "person": {
+      "person_id": "3333",
+      "lastname": "\u0410\u043b\u0438\u043c\u043e\u0432",
+      "firstname": "\u0411\u0430\u0445\u0442\u0438\u0435\u0440",
+      "middlename": "\u0423\u043c\u0430\u0440\u0430\u043b\u0438\u0435\u0432\u0438\u0447",
+      "birthdate": "1966-12-16",
+      "registrationdate": "2006-01-23 11:00:11",
+      "passport": null,
+      "address": "\u0442\u0430\u0448\u043a\u0435\u043d\u0442",
+      "phone": "3334442333"
+    }
+  }
+}

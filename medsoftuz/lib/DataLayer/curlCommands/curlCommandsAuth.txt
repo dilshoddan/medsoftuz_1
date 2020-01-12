@@ -1,0 +1,24 @@
+curl -X POST \
+  http://rscu.gx.uz/app \
+  -H 'Authorization: 7d4c6ba8619344ae5d50d69cbe8868d9' \
+  -H 'Content-Type: application/json' \
+  -d '{
+"id": 123,
+"jsonrpc": "2.0",
+"method": "users.auth",
+"params":{
+
+"email":"admin@gx.uz",
+"password":"123456"
+}
+}'
+
+
+{
+    "id":123,
+    "jsonrpc":"2.0",
+    "method":"users.auth",
+    "result":{
+        "token":"378130d7734a06977bbf251e6deae9a8"
+        }
+} 
