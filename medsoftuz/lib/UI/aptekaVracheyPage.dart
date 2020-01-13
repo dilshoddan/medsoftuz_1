@@ -15,7 +15,7 @@ class _AptekaVracheyState extends State<AptekaVrachey> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Apteka Vrachey",
+          "Аптека врачей",
           style: TextStyle(color: Colors.black),
         ),
         backgroundColor: Colors.white,

@@ -6,6 +6,7 @@ import 'package:medsoftuz/DataLayer/models/TokenAuth/UserAuth.dart';
 import 'package:medsoftuz/UI/aptekaPage.dart';
 import 'package:medsoftuz/UI/aptekaVracheyPage.dart';
 import 'package:medsoftuz/UI/otchyotiPage.dart';
+import 'package:medsoftuz/UI/Profil.dart';
 import 'package:medsoftuz/DataLayer/models/patient/patients.dart';
 import 'package:medsoftuz/DataLayer/Posts/patientPost.dart';
 import 'package:http/http.dart' as http;
@@ -139,12 +140,19 @@ class _HomeState extends State<Home> {
             )));
   }
 
+  openProfil(String data) {
+    Navigator.of(context).push(MaterialPageRoute(
+        builder: (context) => Profil(
+          data: data,
+        )));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
           title: Text(
-            "Patsienti",
+            "Пациенты",
             style: TextStyle(color: Colors.black),
           ),
           backgroundColor: Colors.white,
@@ -153,7 +161,7 @@ class _HomeState extends State<Home> {
             IconButton(
                 color: Colors.black,
                 icon: Icon(Icons.add),
-                onPressed: () => debugPrint("add"))
+                onPressed: () => debugPrint("Add Patient"))
           ],
         ),
         drawer: Drawer(
@@ -161,7 +169,7 @@ class _HomeState extends State<Home> {
             children: <Widget>[
               ListTile(
                 title: Text(
-                  "Patsienti",
+                  "Пациенты",
                   style: TextStyle(fontSize: 18.0),
                 ),
                 leading: Icon(
@@ -172,7 +180,7 @@ class _HomeState extends State<Home> {
               ),
               ListTile(
                 title: Text(
-                  "Apteka",
+                  "Аптека",
                   style: TextStyle(fontSize: 18.0),
                 ),
                 leading: Icon(
@@ -184,7 +192,7 @@ class _HomeState extends State<Home> {
               ),
               ListTile(
                 title: Text(
-                  "Apteka vrachey",
+                  "Аптека врачей",
                   style: TextStyle(fontSize: 18.0),
                 ),
                 leading: Icon(
@@ -192,11 +200,11 @@ class _HomeState extends State<Home> {
                   color: Colors.black,
                   size: 35.0,
                 ),
-                onTap: () => openAptekaVrachey("Open Apteka"),
+                onTap: () => openAptekaVrachey("Open Apteka Vrachey"),
               ),
               ListTile(
                 title: Text(
-                  "Otchyoti",
+                  "Отчеты",
                   style: TextStyle(fontSize: 18.0),
                 ),
                 leading: Icon(
@@ -204,7 +212,7 @@ class _HomeState extends State<Home> {
                   color: Colors.black,
                   size: 35.0,
                 ),
-                onTap: () => openOtchyoti("Open Apteka"),
+                onTap: () => openOtchyoti("Open Otchyoti"),
               ),
               Divider(
                 height: 10.0,
@@ -212,7 +220,7 @@ class _HomeState extends State<Home> {
               ),
               ListTile(
                 title: Text(
-                  "Zakrit",
+                  "Закрыть",
                   style: TextStyle(fontSize: 18.0),
                 ),
                 leading: Icon(
@@ -236,7 +244,7 @@ class _HomeState extends State<Home> {
                     padding: EdgeInsets.all(20.0),
                     child: TextField(
                       controller: myController,
-                      decoration: InputDecoration(hintText: "Vvedite kod"),
+                      decoration: InputDecoration(hintText: "Введите код пациента"),
                       onEditingComplete: () {
                         debugPrint("Typed: ${myController.text}");
                         setState(() {
@@ -256,27 +264,53 @@ class _HomeState extends State<Home> {
               children: <Widget>[
                 Flexible(
                   child: Container(
-                    width: 300.0,
-                    margin: EdgeInsets.all(10.0),
-                    child: FutureBuilder<Patients>(
-                      future: patients,
-                      builder: (context, snapshot) {
-                        if (snapshot.hasData &&
-                            (snapshot.connectionState ==
-                                ConnectionState.done)) {
-                          return Text(
-                            snapshot.data.method,
-                            overflow: TextOverflow.ellipsis,
-                            maxLines: 10,
-                          );
-                        } else if (snapshot.hasError) {
-                          return Text("${snapshot.error}");
-                        }
 
-                        // By default, show a loading spinner.
-                        return LinearProgressIndicator();
-                      },
-                    ),
+                    margin: EdgeInsets.all(10.0),
+                    child: Card(
+                      elevation: 10.0,
+                      margin: EdgeInsets.all(10.0),
+                      child: Container(
+                        padding: EdgeInsets.all(10.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: <Widget>[
+                            CircleAvatar(
+                              child: Text("A"),
+                              backgroundColor: Colors.redAccent,
+                              foregroundColor: Colors.white,
+                            ),
+                            SizedBox(
+                              width: 10.0,
+                            ),
+                            Container(
+                              width: 210.0,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  InkWell(
+                                    child: Text(
+                                      "Алимов Бахтиер Умаралиевич",
+                                      style: TextStyle(
+                                          fontSize: 14.0, color: Colors.green),
+                                      maxLines: 1,
+                                    ),
+                                    onTap: () => openProfil("Open Profil")
+
+                                  ),
+                                  SizedBox(
+                                    height: 5.0,
+                                  ),
+                                  Text(
+                                    "16.12.1966",
+                                    maxLines: 2,
+                                  )
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    )
                   ),
                 )
               ],

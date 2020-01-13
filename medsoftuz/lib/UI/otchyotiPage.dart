@@ -15,7 +15,7 @@ class _OtchyotiState extends State<Otchyoti> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Otchyoti",
+          "Отчеты",
           style: TextStyle(color: Colors.black),
         ),
         backgroundColor: Colors.white,

@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4dfaa6d2-40d8-450a-a7ad-6408cd86d0c1" name="Default Changelist" comment="" />
+    <list default="true" id="6a360f0b-4f0a-4f44-b87f-15bc901d54dc" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
       <list>
-        <option value="dilshoddan@gmail.com" />
+        <option value="Dart File" />
       </list>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
-  <component name="ProjectId" id="1WJbNSojM7ffonMKzGYVrtQScC8" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1WIeZJJ2dK966gZMKbaViNt29Az" />
   <component name="ProjectReloadState">
     <option name="STATE" value="1" />
   </component>
@@ -31,14 +28,19 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\work_1\medsoftuz\lib\DataLayer" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" singleton="false">
       <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
       <method v="2" />
     </configuration>
@@ -60,13 +62,15 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4dfaa6d2-40d8-450a-a7ad-6408cd86d0c1" name="Default Changelist" comment="" />
-      <created>1578870604267</created>
+      <changelist id="6a360f0b-4f0a-4f44-b87f-15bc901d54dc" name="Default Changelist" comment="" />
+      <created>1578841589482</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1578870604267</updated>
-      <workItem from="1578870609661" duration="704000" />
-      <workItem from="1578871331241" duration="254000" />
+      <updated>1578841589482</updated>
+      <workItem from="1578841593256" duration="10290000" />
+      <workItem from="1578870291131" duration="72000" />
+      <workItem from="1578874841606" duration="6704000" />
+      <workItem from="1578885027568" duration="3953000" />
     </task>
     <servers />
   </component>
@@ -74,29 +78,56 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="183" key="#Deployment" timestamp="1578871418739">
+    <state x="790" y="380" key="#com.intellij.debugger.actions.ViewTextAction" timestamp="1578854695973">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="183" key="#Deployment/0.0.1920.1050@0.0.1920.1050" timestamp="1578871418739" />
-    <state x="321" y="0" width="1505" height="978" key="CommitChangelistDialog2" timestamp="1578871471545">
+    <state x="790" y="380" key="#com.intellij.debugger.actions.ViewTextAction/0.0.1920.1050@0.0.1920.1050" timestamp="1578854695973" />
+    <state x="652" y="259" key="#main.dart" timestamp="1578843569695">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="321" y="0" width="1505" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1578871471545" />
-    <state x="740" y="267" key="FileChooserDialogImpl" timestamp="1578871363946">
+    <state x="652" y="259" key="#main.dart/0.0.1920.1050@0.0.1920.1050" timestamp="1578843569695" />
+    <state x="677" y="385" width="1060" height="593" key="#xdebugger.evaluate" timestamp="1578860014509">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="267" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1578871363946" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1578871572041">
+    <state x="677" y="385" width="1060" height="593" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1578860014509" />
+    <state width="524" height="466" key="DebuggerActiveHint" timestamp="1578856651248">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1578871572041" />
-    <state x="656" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1578871333638">
+    <state width="524" height="466" key="DebuggerActiveHint/0.0.1920.1050@0.0.1920.1050" timestamp="1578856651248" />
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1578891032668">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="656" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578871333638" />
-    <state x="769" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578871479213">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1578891032668" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1578891032668">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="769" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1578871479213" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1578891032668" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1578891032668">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1578891032668" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1578891032668">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1578891032668" />
+    <state width="968" height="533" key="XDebugger.FullValuePopup" timestamp="1578860014010">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="968" height="533" key="XDebugger.FullValuePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1578860014010" />
+    <state x="656" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1578885026739">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="656" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578885026739" />
+    <state x="342" y="250" key="new project wizard" timestamp="1578857763413">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="342" y="250" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1578857763413" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="dart-exception" />
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
