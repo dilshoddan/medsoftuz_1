@@ -14,16 +14,16 @@ import 'package:medsoftuz/DataLayer/models/samplePost.dart';
 
 Future<UserAuth> fetchTokenPost() async {
   Map<String, String> headers = {
-    'Authorization': '7d4c6ba8619344ae5d50d69cbe8868d9',
+    'Authorization': '',
     'Content-Type': 'application/json',
   };
 
  var header = {
-   HttpHeaders.authorizationHeader: "7d4c6ba8619344ae5d50d69cbe8868d9",
+   HttpHeaders.authorizationHeader: "",
    HttpHeaders.contentTypeHeader: "application/json"
  };
 
-  Map<String, String> params = {"email": "admin@gx.uz", "password": "123456"};
+  Map<String, String> params = {"email": "a", "password": ""};
 
   var body = json.encode(
       {"id": 123, "jsonrpc": "2.0", "method": "users.auth", "params": params});
@@ -43,7 +43,7 @@ Future<UserAuth> fetchTokenPost() async {
 
 Future<Patients> fetchPost(String code) async {
   Map<String, String> headers = {
-    HttpHeaders.authorizationHeader : '7d4c6ba8619344ae5d50d69cbe8868d9',
+    HttpHeaders.authorizationHeader : '',
     HttpHeaders.contentTypeHeader: 'application/json'
   };
 
@@ -51,7 +51,7 @@ Future<Patients> fetchPost(String code) async {
 //  'Content-Type': 'application/json',
 
   var params = json.encode(
-      {"person_id": "$code", "token": "378130d7734a06977bbf251e6deae9a8"});
+      {"person_id": "$code", "token": ""});
 
   var bodyOld = json.encode(
       {"id": 123, "jsonrpc": "2.0", "method": "person.info", "params": params});
@@ -63,7 +63,7 @@ Future<Patients> fetchPost(String code) async {
             "method" : "person.info",
             "params" : {
                         "person_id" : "$code",
-                        "token" : "378130d7734a06977bbf251e6deae9a8"
+                        "token" : ""
             }
           }
   ''';
